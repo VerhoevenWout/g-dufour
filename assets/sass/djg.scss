@@ -1,0 +1,135 @@
+// VARIABLES
+
+$unit: 1px;
+$base-font-size: 16px;
+
+$all-pad: 0, 15, 30;
+$sides-pad: 10;
+$ends-pad: 10;
+
+$all-mrg: 0, 10, 20, 30;
+$sides-mrg: 10;
+$ends-mrg: 10;
+
+$box-ratios: 3, 4;
+
+// PADDING
+
+@mixin pad-all-x {
+  @each $item in $all-pad {
+  .pad-all-#{$item} { padding: $item * $unit; }
+  }
+}
+@mixin pad-sides-x {
+  @each $item in $sides-pad {
+  .pad-sides-#{$item} { padding-left: $item * $unit; padding-right: $item * $unit; }
+  }
+}
+@mixin pad-ends-x {
+  @each $item in $ends-pad {
+  .pad-ends-#{$item} { padding-top: $item * $unit; padding-bottom: $item * $unit; }
+  }
+}
+
+@include pad-all-x;
+@include pad-sides-x;
+@include pad-ends-x;
+
+// MARGINS
+
+@mixin mrg-all-x {
+  @each $item in $all-mrg {
+  .mrg-all-#{$item} { margin: $item * $unit; }
+  }
+}
+@mixin mrg-sides-x {
+  @each $item in $sides-mrg {
+  .mrg-sides-#{$item} { margin-left: $item * $unit; margin-right: $item * $unit; }
+  }
+}
+
+@mixin mrg-ends-x {
+  @each $item in $ends-mrg {
+  .mrg-ends-#{$item} { padding-top: $item * $unit; padding-bottom: $item * $unit; }
+  }
+}
+
+@include mrg-all-x;
+@include mrg-sides-x;
+
+// ASPECT RATIO BOXES
+
+@mixin box-ratio-x {
+  @each $item in $box-ratios {
+  .box-#{$item}-1 { padding-bottom: 100% / $item; height: 0; position: relative; }
+  }
+}
+
+@include box-ratio-x;
+
+// FONT FUNCTIONS
+
+@function rem($target, $context: $base-font-size) {
+   @if $target == 0 { @return 0 }
+   @return $target / $context + 0rem;
+}
+
+@function lh($font, $line-height) {
+   @return $line-height / $font;
+}
+
+body{
+	font-size: $base-font-size;
+	-webkit-font-smoothing: antialiased;
+}
+p{
+	font-size: rem(16px);
+	line-height: lh(16,22);
+}
+h1, .h1{
+	
+}
+h2, .h2{
+	
+}
+h3, .h3{
+	
+}
+h4, .h4{
+	
+}
+
+.text-r{
+text-align: right;
+}
+.text-l{
+text-align: left;
+}
+.text-c{
+text-align: center;
+}
+.bg-cover{
+	background-size: cover;
+}
+.bg-contain{
+	background-size: contain;
+}
+
+.box-inner{
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+
+.center-div{
+	display: table;
+}
+.center-div-contain{
+	vertical-align: middle;
+	display: table-cell;
+}
+
+// OWL CAROUSEL CENTER ARROWS
+

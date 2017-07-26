@@ -1,0 +1,41 @@
+@font-face {
+  font-family: Avenir-book;
+  src: url(assets/fonts/avenir/Avenir-Book.ttf); }
+
+body{
+	 font-family: Avenir-book, sans-serif;
+	font-size: 16px;
+}
+h2 {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  text-align: center;
+  color: #ed008f;
+  font-size: 1.5625rem;
+  line-height: 1.8;
+  margin: 50px 0 30px; }
+
+a {
+  color: inherit;
+  -webkit-transition: color 0.4s linear;
+  -moz-transition: color 0.4s linear;
+  -ms-transition: color 0.4s linear;
+  -o-transition: color 0.4s linear;
+  transition: color 0.4s linear; }
+  a:hover, a:focus {
+    color: #ed008f;
+    text-decoration: none; }
+
+p, ul, ol {
+  font-size: 1rem;
+  line-height: 1.875;
+  color: #2b3039;
+  letter-spacing: 2px; }
+
+.intro {
+  font-size: 1.25rem;
+  line-height: 2.375;
+  color: #486c75; }
+
+ul, ol {
+  padding-left: 20px; }

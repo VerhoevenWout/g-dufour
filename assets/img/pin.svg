@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="44px" height="65px" viewBox="0 0 74 95" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>Pin</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <style type="text/css">
+      #Pin{
+        width: 1px;
+        height: 1px;
+      }
+    </style>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Pin" fill="#2F5C8E">
+            <ellipse id="Oval" fill-opacity="0.293166893" cx="37" cy="89.5" rx="10" ry="5.5"></ellipse>
+            <path d="M37,89.3681923 L35.6857327,88.127381 C34.8270913,87.3163868 14.5651392,68.1632237 8.12582497,60.1366636 C2.88563073,53.605033 0,45.3878843 0,36.9990074 C-1.7632989e-15,16.5970918 16.5980845,0 37,0 C57.4019155,0 74,16.5970918 74,36.9990074 C74,45.388877 71.1143693,53.6060256 65.874175,60.1366636 C59.4358534,68.162231 39.1739014,87.3153941 38.3142673,88.127381 L37,89.3681923 Z M37,50.4166443 C44.3982132,50.4166443 50.4186296,44.3982132 50.4186296,36.9990074 C50.4186296,29.5998015 44.3992059,23.5813704 37,23.5813704 C29.6007941,23.5813704 23.582363,29.6007941 23.582363,36.9990074 C23.582363,44.3972206 29.6017868,50.4166443 37,50.4166443 Z" id="Combined-Shape" fill-rule="nonzero"></path>
+        </g>
+    </g>
+</svg>
